@@ -8,6 +8,6 @@ React + json-server + Jest(测试框架) + Enzyme(测试工具) + Recharts(可�
 
 ## 课程参考
 
-![慕课网](https://coding.imooc.com/class/302.html#Anchor)
+[慕课网](https://coding.imooc.com/class/302.html#Anchor)
 
 在此课程项目基础上，进行完善与改进。本项目要比课程中的实例做的更完整。
