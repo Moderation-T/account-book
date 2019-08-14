@@ -29,6 +29,5 @@ React + koa.js(后端) + antd(UI 框架) + Jest(测试框架) + Enzyme(测试工
 
 | 差别点   |       慕课课程       |      本项目       |
 | -------- | :------------------: | :---------------: |
-| 第一行   |        第一列        |      第二列       |
 | UI 库    |      bootstrap       |    ant-design     |
 | 后端服务 | json-server 模拟数据 | koa.js 真后端服务 |
