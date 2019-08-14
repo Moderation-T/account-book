@@ -1,8 +1,14 @@
 import React from 'react';
-import './App.css';
+
+// 列表模式页面
+import Home from './containers/Home';
 
 function App() {
-  return <div className="App">首页</div>;
+  return (
+    <div className="App">
+      <Home />
+    </div>
+  );
 }
 
 export default App;
