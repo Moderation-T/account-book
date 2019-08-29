@@ -13,7 +13,7 @@
 
 ## 技术栈
 
-React + koa.js(后端) + antd(UI 框架) + Jest(测试框架) + Enzyme(测试工具) + Recharts(可视化) + Axios(异步处理) + Leancloud(云平台部署)
+React +antd(UI 框架) + json.server(mock 数据) + koa.js(真实的后端) + Jest(测试框架) + Enzyme(测试工具) + Echarts(可视化) + Axios(异步处理) + Leancloud(云平台部署)
 
 ## 课程参考
 
@@ -27,7 +27,8 @@ React + koa.js(后端) + antd(UI 框架) + Jest(测试框架) + Enzyme(测试工
 
 课程与项目的一些区别：
 
-| 差别点   |       慕课课程       |      本项目       |
-| -------- | :------------------: | :---------------: |
-| UI 库    |      bootstrap       |    ant-design     |
-| 后端服务 | json-server 模拟数据 | koa.js 真后端服务 |
+| 差别点   | 慕课课程  |   本项目   |
+| -------- | :-------: | :--------: |
+| UI 库    | bootstrap | ant-design |
+| 后端服务 |    无     |   koa.js   |
+| 图表     | Recharts  |  Echarts   |
