@@ -209,6 +209,52 @@ response:
 
 GET {BASE_URL}/account_chart?date={date}
 
+params:
 
-TODOLIST：
-消费类型与图表对应关系 消费类型的种类（demo 可以意思意思弄少一点 也不能太少暂定8个好了）
+|参数|说明|备注|
+|---|---|---|
+|date| string 选择的日期格式，默认上传本月，格式如:'2020-01'|无|
+
+response:
+
+- success
+```js
+{
+    errcode:0,
+    data:{
+        pet:'10%', // 宠物
+        learn:'20%', // 学习
+        eat:'8%', // 餐饮
+        shop:'2%', // 购物
+        message:'25%', // 通讯
+        entertainment:'8%', // 娱乐
+        traffic:'15%', // 交通
+        digital:'12%', // 数码
+    }
+}
+
+``` 
+- fault
+```js
+{
+    errorCode:1,
+    data:'请求发生错误'
+}
+
+``` 
+
+**附加说明**
+```js
+// 消费类型与图表对应关系 消费类型的种类（demo 可以意思意思弄少一点 也不能太少暂定8个好了）
+{
+    pet:'宠物',
+    learn:'学习',
+    eat:'餐饮',
+    shop:'购物',
+    message:'通讯',
+    entertainment:'娱乐',
+    traffic:'交通',
+    digital:'数码',
+}
+```
+        
