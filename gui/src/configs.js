@@ -1,3 +1,3 @@
 export default configs = {
-    BASE_URL = ''
+    BASE_URL = '',
 }

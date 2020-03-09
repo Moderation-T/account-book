@@ -15,6 +15,6 @@ export default accountApi = (date,id) => {
     // 删除账目
     deleteAccount: `${BASE_URL}/account_list?{id}`,
     // 图表
-    getAccountChart:`${BASE_URL}/account_chart?date=${date}`
+    getAccountChart:`${BASE_URL}/account_chart?date=${date}`,
   };
 };
