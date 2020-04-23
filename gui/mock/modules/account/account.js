@@ -7,6 +7,7 @@ module.exports = function(server) {
 
   server.get('/api/account', (req, res, next) => {
     res.send(accountList());
-    next();
+    next();    
   });
 };
+ 
