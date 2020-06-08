@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tabs } from 'antd';
+import PropTypes from 'prop-types';
 
 import ListModel from './ListModel';
 import ChartModel from './ChartModel';
@@ -18,5 +19,12 @@ function ModelTab({ items, onModifyItem, onDeleteItem }) {
     </Tabs>
   );
 }
+
+ModelTab.protoTypes = {
+  // 函数类型且是必须的
+  items: PropTypes.array.isRequired,
+  onDeleteItem: PropTypes.func.isRequired,
+  onModifyItem: PropTypes.func.isRequired,
+};
 
 export default ModelTab;

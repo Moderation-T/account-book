@@ -32,7 +32,7 @@ const testData = [
   },
 ];
 
-function Home(props) {
+function Home() {
   const onModifyItem = () => {
     console.log('编辑');
   };
