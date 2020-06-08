@@ -39,10 +39,13 @@ function Home() {
   const onDeleteItem = () => {
     console.log('删除');
   };
+  const onChangeMonth = (e) => {
+    console.log(e);
+  };
 
   return (
     <Container>
-      <Header></Header>
+      <Header year="" month="" onChangeMonth={onChangeMonth}></Header>
       <ModelTab items={testData} onModifyItem={onModifyItem} onDeleteItem={onDeleteItem}></ModelTab>
     </Container>
   );

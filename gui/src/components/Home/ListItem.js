@@ -34,4 +34,12 @@ ListItem.protoTypes = {
   onModifyItem: PropTypes.func.isRequired,
 };
 
+/* 
+// 可以给组件属性设置默认值
+ListItem.defaultProps = {
+  // 函数类型且是必须的
+  onModifyItem: () => {},
+};
+ */
+
 export default ListItem;
