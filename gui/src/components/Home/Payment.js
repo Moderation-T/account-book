@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 function Payment({ income, outcome }) {
   return (
     <div>
-      收入：{income} 支出：{outcome}
+      <span className="income">收入：{income}</span>
+      <span className="outcome">支出：{outcome}</span>
     </div>
   );
 }
