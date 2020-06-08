@@ -33,3 +33,26 @@
 > 第一步 把 UI 划分出组件层级
 > 第二步 创建应用的静态版本
 
+- 为项目选择图表库
+
+  > icomoon Ionicons
+
+- 类型检查
+
+  > TypeScript
+  > PropTypes
+
+- 给组件属性设置默认值
+
+```js
+// 可以给组件属性设置默认值
+ListItem.defaultProps = {
+  // 函数类型且是必须的
+  onModifyItem: () => {},
+};
+```
+
+- state 的设计原则
+  > 最小化 State
+  > DRY - Don't Reapeat Yourself
+  > 有些数据可以根据 State 计算得出
