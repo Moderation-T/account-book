@@ -53,6 +53,33 @@ ListItem.defaultProps = {
 ```
 
 - state 的设计原则
+
   > 最小化 State
   > DRY - Don't Reapeat Yourself
   > 有些数据可以根据 State 计算得出
+
+- 测试
+  ![测试金字塔](./resource-learn-note/测试金字塔.png)
+
+- Jest
+
+  > 通用的测试框架 支持多平台
+  > 速度很快
+  > 内置代码覆盖率
+  > 不需要任何的配置
+  > 为 React 提供了许多特殊的测试方法
+
+- 断言库
+
+  > 判断一个值是否对应相应的结构
+  > [断言库](https://jestjs.io/docs/en/using-matchers)
+
+- Enzyme
+
+  > 基于官方测试工具 ReactTestUtils 封装的测试工具
+  > 语法简单易懂
+  > 类似 Jquery 的链式写法
+
+  > 两种测试方法：
+  > Shallow Rendering
+  > DOM Rendering
