@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import moment from 'moment';
+import { parseMonthMomentToMonthString } from '../utils/utility';
 
 import Header from '../components/Home/Header';
 import ModelTab from '../components/Home/ModelTab';
@@ -35,7 +35,7 @@ const testData = [
 
 function Home() {
   // 年月选择
-  const [monthCategory, setMonthCategory] = useState(moment(new Date()).format('YYYY-MM'));
+  const [monthCategory, setMonthCategory] = useState(parseMonthMomentToMonthString(new Date()));
   // 收入
   const [income, setIncome] = useState(0);
   // 支出
@@ -51,7 +51,7 @@ function Home() {
   };
   // 选择月份
   const onChangeMonth = (date) => {
-    setMonthCategory(moment(date).format('YYYY-MM'));
+    setMonthCategory(parseMonthMomentToMonthString(date));
   };
 
   return (

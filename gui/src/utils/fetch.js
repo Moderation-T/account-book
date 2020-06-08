@@ -25,7 +25,7 @@ export const post = (url, data) => {
   });
 };
 
-// PUT请求
+// DELETE请求
 export const delete = (url, data) => {
   return request(url, {
     body: JSON.stringify(data),
