@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "^3.22.2",
     "eslint": "^6.8.0",
     "faker": "^4.1.0",
     "lodash": "^4.17.15",
@@ -11,7 +10,9 @@
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.0",
     "restify": "^8.5.1",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "@ant-design/icons": "^4.2.1",
+    "antd": "^4.3.3"
   },
   "scripts": {
     "start": "react-scripts start",

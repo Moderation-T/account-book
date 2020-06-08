@@ -33,10 +33,17 @@ const testData = [
 ];
 
 function Home(props) {
+  const onModifyItem = () => {
+    console.log('编辑');
+  };
+  const onDeleteItem = () => {
+    console.log('删除');
+  };
+
   return (
     <Container>
       <Header></Header>
-      <ModelTab items={testData}></ModelTab>
+      <ModelTab items={testData} onModifyItem={onModifyItem} onDeleteItem={onDeleteItem}></ModelTab>
     </Container>
   );
 }

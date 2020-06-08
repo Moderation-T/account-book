@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-// import { EditOutline, DeleteOutline } from '@ant-design/icons';
+import { EditOutlined, DeleteOutlined } from '@ant-design/icons';
 
-function ListItem({ item }) {
+function ListItem({ item, onModifyItem, onDeleteItem }) {
   // 判断收入还是支出
   // const type = item.category.type === 'outcome' ? '-' : '+';
 
@@ -15,8 +15,12 @@ function ListItem({ item }) {
         {item.price}
       </Col>
       <Col span={4}>{item.date}</Col>
-      <Col span={4}>{/* <EditOutline /> */}</Col>
-      <Col span={4}>{/* <DeleteOutline /> */}</Col>
+      <Col span={4}>
+        <EditOutlined onClick={onModifyItem} />
+      </Col>
+      <Col span={4}>
+        <DeleteOutlined onClick={onDeleteItem} />
+      </Col>
     </Row>
   );
 }
