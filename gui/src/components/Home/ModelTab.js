@@ -1,22 +1,22 @@
-import React from 'react'
-import {Tabs} from 'antd'
+import React from 'react';
+import { Tabs } from 'antd';
 
-import ListModel from './ListModel'
-import ChartModel from './ChartModel'
+import ListModel from './ListModel';
+import ChartModel from './ChartModel';
 
-const {TabPane} = Tabs;
+const { TabPane } = Tabs;
 
-function ModelTab(params) {
-  
-  return (<Tabs defaultActiveKey="list" >
-  <TabPane tab="列表模式" key="list">
-    <ListModel></ListModel>
-  </TabPane>
-  <TabPane tab="图表模式" key="chart">
-    <ChartModel></ChartModel>
-  </TabPane>
-</Tabs>)
+function ModelTab({ items }) {
+  return (
+    <Tabs defaultActiveKey="list">
+      <TabPane tab="列表模式" key="list">
+        <ListModel items={items}></ListModel>
+      </TabPane>
+      <TabPane tab="图表模式" key="chart">
+        <ChartModel></ChartModel>
+      </TabPane>
+    </Tabs>
+  );
 }
-
 
 export default ModelTab;
