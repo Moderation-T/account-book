@@ -34,23 +34,29 @@ const testData = [
 ];
 
 function Home() {
+  // 年月选择
   const [monthCategory, setMonthCategory] = useState(moment(new Date()).format('YYYY-MM'));
+  // 收入
+  const [income, setIncome] = useState(0);
+  // 支出
+  const [outcome, setOutcome] = useState(0);
 
+  // 编辑账目
   const onModifyItem = () => {
     console.log('编辑');
   };
+  // 删除账目
   const onDeleteItem = () => {
     console.log('删除');
   };
+  // 选择月份
   const onChangeMonth = (date) => {
     setMonthCategory(moment(date).format('YYYY-MM'));
   };
 
-  console.log(monthCategory);
-
   return (
     <Container>
-      <Header monthCategory={monthCategory} onChangeMonth={onChangeMonth}></Header>
+      <Header monthCategory={monthCategory} onChangeMonth={onChangeMonth} income={income} outcome={outcome}></Header>
       <ModelTab items={testData} onModifyItem={onModifyItem} onDeleteItem={onDeleteItem}></ModelTab>
     </Container>
   );
