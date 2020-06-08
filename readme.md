@@ -32,3 +32,12 @@ React +antd(UI 框架) + json.server(mock 数据) + koa.js(真实的后端) + Je
 | UI 库    | bootstrap | ant-design |
 | 后端服务 |    无     |   koa.js   |
 | 图表     | Recharts  |  Echarts   |
+
+> 以上是学习规划
+
+---
+
+TODOLIST:
+
+- [ ] 前端展示
+- [ ] mock 数据
