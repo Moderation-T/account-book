@@ -1,18 +1,18 @@
 import React from 'react';
 import { DatePicker } from 'antd';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 
-function SelectTime({ year, month, onChangeMonth }) {
+function SelectTime({ monthCategory, onChangeMonth }) {
   return (
     <div>
-      <DatePicker onChange={onChangeMonth} picker="month" />
+      <DatePicker allowClear={false} defaultValue={moment(monthCategory)} onChange={onChangeMonth} picker="month" />
     </div>
   );
 }
 
 SelectTime.propTypes = {
-  year: PropTypes.string.isRequired,
-  month: PropTypes.string.isRequired,
+  monthCategory: PropTypes.string.isRequired,
   onChangeMonth: PropTypes.func.isRequired,
 };
 

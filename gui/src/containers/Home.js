@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import moment from 'moment';
 
 import Header from '../components/Home/Header';
 import ModelTab from '../components/Home/ModelTab';
@@ -33,19 +34,23 @@ const testData = [
 ];
 
 function Home() {
+  const [monthCategory, setMonthCategory] = useState(moment(new Date()).format('YYYY-MM'));
+
   const onModifyItem = () => {
     console.log('编辑');
   };
   const onDeleteItem = () => {
     console.log('删除');
   };
-  const onChangeMonth = (e) => {
-    console.log(e);
+  const onChangeMonth = (date) => {
+    setMonthCategory(moment(date).format('YYYY-MM'));
   };
+
+  console.log(monthCategory);
 
   return (
     <Container>
-      <Header year="" month="" onChangeMonth={onChangeMonth}></Header>
+      <Header monthCategory={monthCategory} onChangeMonth={onChangeMonth}></Header>
       <ModelTab items={testData} onModifyItem={onModifyItem} onDeleteItem={onDeleteItem}></ModelTab>
     </Container>
   );

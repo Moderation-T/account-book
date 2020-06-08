@@ -13,12 +13,12 @@ const Container = styled.div`
   background: #a4dac1
 `;
 
-function Header({ year, month, onChangeMonth }) {
+function Header({ monthCategory, onChangeMonth }) {
   return (
     <Container>
       <Row>
         <Col span={12}>
-          <SelectTime year={year} month={month} onChangeMonth={onChangeMonth}></SelectTime>
+          <SelectTime monthCategory={monthCategory} onChangeMonth={onChangeMonth}></SelectTime>
         </Col>
         <Col span={12}>
           <Payment></Payment>
@@ -29,8 +29,7 @@ function Header({ year, month, onChangeMonth }) {
 }
 
 Header.propTypes = {
-  year: PropTypes.string.isRequired,
-  month: PropTypes.string.isRequired,
+  monthCategory: PropTypes.string.isRequired,
   onChangeMonth: PropTypes.func.isRequired,
 };
 
