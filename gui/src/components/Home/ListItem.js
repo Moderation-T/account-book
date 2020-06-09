@@ -9,17 +9,20 @@ function ListItem({ item, onModifyItem, onDeleteItem }) {
 
   return (
     <Row gutter={16}>
-      <Col span={4}>{item.name}</Col>
-      <Col span={4}>{item.title}</Col>
-      <Col span={4}>
+      <Col span={4} className="title">
+        {item.title}
+      </Col>
+      <Col span={4} className="price">
         {/* {type} */}
         {item.price}
       </Col>
-      <Col span={4}>{item.date}</Col>
-      <Col span={4}>
+      <Col span={4} className="date">
+        {item.date}
+      </Col>
+      <Col span={4} className="edit">
         <EditOutlined onClick={onModifyItem} />
       </Col>
-      <Col span={4}>
+      <Col span={4} className="delete">
         <DeleteOutlined onClick={onDeleteItem} />
       </Col>
     </Row>

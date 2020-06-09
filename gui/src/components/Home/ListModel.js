@@ -1,10 +1,7 @@
 import React from 'react';
-import { Tabs } from 'antd';
 import PropTypes from 'prop-types';
 
 import ListItem from './ListItem';
-
-const { TabPane } = Tabs;
 
 function ListModel({ items, onModifyItem, onDeleteItem }) {
   return items.map((item) => (
