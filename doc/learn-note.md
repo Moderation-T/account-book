@@ -67,7 +67,8 @@ ListItem.defaultProps = {
   > 速度很快
   > 内置代码覆盖率
   > 不需要任何的配置
-  > 为 React 提供了许多特殊的测试方法
+  > 为 React 提供了许多特殊的测试方法 - Snapshot
+  > snapshot: 生成快照，生成结构树，对比结构树前后是否相同
 
 - 断言库
 
