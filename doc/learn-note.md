@@ -110,3 +110,10 @@ test('test object', () => {
   > 两种测试方法：
   > Shallow Rendering
   > DOM Rendering
+
+- TDD 测试驱动开发
+  > 先写 test 再去写组件
+
+- state 方案
+> flatten state - 解决数据冗余、数据处理更容易
+
